@@ -6,25 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How's The Weather</title>
     <link rel="stylesheet" href="style.css" />
+   
 </head>
 <body>
-    <header>
-        <h1 class="title">How's the Weather?</h1>
-   <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city">
-</header>
+    <h1 class="title">How's the Weather?</h1>
+    <div class="container">
+        <div class="weather-input">
+   <input type="text" autocomplete="off" class="city-input" placeholder="Enter your city">
+   <button class="search-btn">Search</button>
+   <div class="separator"></div>
+        <button class="location-btn">Use Current Location</button>
+        </div>
+
 <main>
-    <div class="main">
-    <section class="location">
-        <div class="city">Manila, Las Pinas</div>
-        <div class="date">Monday 30 May</div>
-    </section>
-    <div class="current">
-        <div class="temp">15<span>°C</span></div>
-        <div class="weather">Sunny</div>
-        <div class="hi-low">13°C / 16°C</div>
+  <div class="weather-data">
+    <div class="current-weather">
+      <div class="details">
+        <h2>Location ( Date )</h2>
+        <h6>Temperature: __°C</h6>
+        <h6>Wind: __ M/S</h6>
+        <h6>Humidity: __%</h6>
+      </div>
+      
+      </div>
     </div>
+<div class="days-forecast">
+    <h2>5-Days Forecast</h2>
+    <ul class="weather-cards">
+      <li class="card">
+        <h3> Date </h3>
+        <h6>Temperature: __C</h6>
+        <h6>Wind: __ M/S</h6>
+        <h6>Humidity: __%</h6>
+      </li>
+      <li class="card">
+        <h3> Date </h3>
+        <h6>Temperature: __C</h6>
+        <h6>Wind: __ M/S</h6>
+        <h6>Humidity: __%</h6>
+      </li>
+      <li class="card">
+        <h3>Date</h3>
+        <h6>Temperature: __C</h6>
+        <h6>Wind: __ M/S</h6>
+        <h6>Humidity: __%</h6>
+    
+      </li>
+      <li class="card">
+        <h3>Date</h3>
+        <h6>Temperature: __C</h6>
+        <h6>Wind: __ M/S</h6>
+        <h6>Humidity: __%</h6>
+       
+      </li>
+      <li class="card">
+        <h3>Date </h3>
+       
+        <h6>Temperature: __C</h6>
+        <h6>Wind: __ M/S</h6>
+        <h6>Humidity: __%</h6>
+       
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
 </div>
 </main>
-    <script src="index.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
